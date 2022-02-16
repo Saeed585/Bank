@@ -11,7 +11,7 @@
     <RootNamespace>ITBank</RootNamespace>
     <AssemblyName>ITBank</AssemblyName>
     <MyType>WindowsForms</MyType>
-    <ManifestCertificateThumbprint>E056EC76DC29410D6EDEA1B3496BCB08F966BEC1</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>6C4FC6121A54158646B23802AEEC8EDCB46AF69B</ManifestCertificateThumbprint>
     <ManifestKeyFile>ITBank_TemporaryKey.pfx</ManifestKeyFile>
     <GenerateManifests>true</GenerateManifests>
     <SignManifests>true</SignManifests>
