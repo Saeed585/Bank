@@ -1,0 +1,1067 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6E0F7BB-08C8-4478-83DE-2BBE3D9B7A30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ITBank.My.MyApplication</StartupObject>
+    <RootNamespace>ITBank</RootNamespace>
+    <AssemblyName>ITBank</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ManifestCertificateThumbprint>E056EC76DC29410D6EDEA1B3496BCB08F966BEC1</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ITBank_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Bank ico.ico</ApplicationIcon>
+    <PublishUrl>E:\EXE\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>ITsystem</ProductName>
+    <PublisherName>ITsystem</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>10</ApplicationRevision>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ITBank.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ITBank.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="ConvD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ConvD.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.2.3600.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.2.3600.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\10.2.3600.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EdtDT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EdtDT.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="JntNum2Text, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\JntNum2Text.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions.ReportSource" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Bank\ChkPrint.designer.vb">
+      <DependentUpon>ChkPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\ChkPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Computer.designer.vb">
+      <DependentUpon>Computer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Computer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\BankSrch.designer.vb">
+      <DependentUpon>BankSrch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\BankSrch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\TahvilKala.designer.vb">
+      <DependentUpon>TahvilKala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\TahvilKala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Pos.designer.vb">
+      <DependentUpon>Pos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Pos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\PosMoj.designer.vb">
+      <DependentUpon>PosMoj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\PosMoj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\TamirKala.designer.vb">
+      <DependentUpon>TamirKala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\TamirKala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\UsedKala.designer.vb">
+      <DependentUpon>UsedKala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\UsedKala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\SabtEmail.designer.vb">
+      <DependentUpon>SabtEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\SabtEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\PrintReq.designer.vb">
+      <DependentUpon>PrintReq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\PrintReq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\IPPass.designer.vb">
+      <DependentUpon>IPPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\IPPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\RepPrintReq.designer.vb">
+      <DependentUpon>RepPrintReq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\RepPrintReq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\OldMobil.designer.vb">
+      <DependentUpon>OldMobil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\OldMobil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\RepWork.designer.vb">
+      <DependentUpon>RepWork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\RepWork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\ViewResid.designer.vb">
+      <DependentUpon>ViewResid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\ViewResid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Work.designer.vb">
+      <DependentUpon>Work.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Work.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\MobilMoj.designer.vb">
+      <DependentUpon>MobilMoj.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\MobilMoj.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Mobil.designer.vb">
+      <DependentUpon>Mobil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Mobil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Mojoodi.designer.vb">
+      <DependentUpon>Mojoodi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Mojoodi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Ersal.designer.vb">
+      <DependentUpon>Ersal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Ersal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\InsertSerial.designer.vb">
+      <DependentUpon>InsertSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\InsertSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank.designer.vb">
+      <DependentUpon>Bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\KalaPriod.designer.vb">
+      <DependentUpon>KalaPriod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\KalaPriod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Katrij.designer.vb">
+      <DependentUpon>Katrij.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Katrij.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\LapTop.designer.vb">
+      <DependentUpon>LapTop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\LapTop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\KatrijReq.designer.vb">
+      <DependentUpon>KatrijReq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\KatrijReq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\OldComputer.designer.vb">
+      <DependentUpon>OldComputer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\OldComputer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\OldLapTop.designer.vb">
+      <DependentUpon>OldLapTop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\OldLapTop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\OldTerminal.designer.vb">
+      <DependentUpon>OldTerminal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\OldTerminal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\RepComputer.designer.vb">
+      <DependentUpon>RepComputer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\RepComputer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\RepKatrijReq.designer.vb">
+      <DependentUpon>RepKatrijReq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\RepKatrijReq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\RepLaptop.designer.vb">
+      <DependentUpon>RepLaptop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\RepLaptop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\RepMobil.designer.vb">
+      <DependentUpon>RepMobil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\RepMobil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\Report\RepPos.designer.vb">
+      <DependentUpon>RepPos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\Report\RepPos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\ShobMove.designer.vb">
+      <DependentUpon>ShobMove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\ShobMove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bank\KalaOut.designer.vb">
+      <DependentUpon>KalaOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bank\KalaOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Access.designer.vb">
+      <DependentUpon>Access.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Access.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Area.designer.vb">
+      <DependentUpon>Area.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Area.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Cpu.designer.vb">
+      <DependentUpon>Cpu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Cpu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\PrintSerial.designer.vb">
+      <DependentUpon>PrintSerial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\PrintSerial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\GProblem.designer.vb">
+      <DependentUpon>GProblem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\GProblem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\MergeProb.designer.vb">
+      <DependentUpon>MergeProb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\MergeProb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Model.designer.vb">
+      <DependentUpon>Model.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Model.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Hdd.designer.vb">
+      <DependentUpon>Hdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Hdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\KeyBoard.designer.vb">
+      <DependentUpon>KeyBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\KeyBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\LCD.designer.vb">
+      <DependentUpon>LCD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\LCD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Mark.designer.vb">
+      <DependentUpon>Mark.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Mark.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Modem.designer.vb">
+      <DependentUpon>Modem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Modem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Monitor.designer.vb">
+      <DependentUpon>Monitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Monitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Mouse.designer.vb">
+      <DependentUpon>Mouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Mouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\NProblem.designer.vb">
+      <DependentUpon>NProblem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\NProblem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Optic.designer.vb">
+      <DependentUpon>Optic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Optic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Print.designer.vb">
+      <DependentUpon>Print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Print.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Scan.designer.vb">
+      <DependentUpon>Scan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Scan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\Vga.designer.vb">
+      <DependentUpon>Vga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\Vga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\City.designer.vb">
+      <DependentUpon>City.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\City.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Gkala.designer.vb">
+      <DependentUpon>Gkala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Gkala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\GPers.designer.vb">
+      <DependentUpon>GPers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\GPers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\INKala.designer.vb">
+      <DependentUpon>INKala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\INKala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Ostan.designer.vb">
+      <DependentUpon>Ostan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Ostan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\PersinfoPay.designer.vb">
+      <DependentUpon>PersinfoPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\PersinfoPay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\PersIns.designer.vb">
+      <DependentUpon>PersIns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\PersIns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\SematP.designer.vb">
+      <DependentUpon>SematP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\SematP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Skala.designer.vb">
+      <DependentUpon>Skala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Skala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\VahedP.designer.vb">
+      <DependentUpon>VahedP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\VahedP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\VKala.designer.vb">
+      <DependentUpon>VKala.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\VKala.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\About.designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Alarm.designer.vb">
+      <DependentUpon>Alarm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Alarm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\CartVisit.designer.vb">
+      <DependentUpon>CartVisit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\CartVisit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\ChgPass.designer.vb">
+      <DependentUpon>ChgPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ChgPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Company.designer.vb">
+      <DependentUpon>Company.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Company.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Mainfrm.designer.vb">
+      <DependentUpon>Mainfrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Mainfrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MsgbOK.designer.vb">
+      <DependentUpon>MsgbOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MsgbOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MsgbYN.designer.vb">
+      <DependentUpon>MsgbYN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MsgbYN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Pass.designer.vb">
+      <DependentUpon>Pass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Pass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\PhnList.designer.vb">
+      <DependentUpon>PhnList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\PhnList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Phone.designer.vb">
+      <DependentUpon>Phone.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Phone.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Security.designer.vb">
+      <DependentUpon>Security.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Security.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Story.designer.vb">
+      <DependentUpon>Story.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Story.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\UserList.designer.vb">
+      <DependentUpon>UserList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UserList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\RepForm.designer.vb">
+      <DependentUpon>RepForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\RepForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Bank\MainBoard.designer.vb">
+      <DependentUpon>MainBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Bank\MainBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Shobeh.designer.vb">
+      <DependentUpon>Shobeh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Shobeh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Srch.designer.vb">
+      <DependentUpon>Srch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Srch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Vaghaye.designer.vb">
+      <DependentUpon>Vaghaye.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Vaghaye.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bank\ChkPrint.resx">
+      <DependentUpon>ChkPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Computer.resx">
+      <DependentUpon>Computer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\BankSrch.resx">
+      <DependentUpon>BankSrch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\TahvilKala.resx">
+      <DependentUpon>TahvilKala.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Pos.resx">
+      <DependentUpon>Pos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\PosMoj.resx">
+      <DependentUpon>PosMoj.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\TamirKala.resx">
+      <DependentUpon>TamirKala.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\UsedKala.resx">
+      <DependentUpon>UsedKala.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\SabtEmail.resx">
+      <DependentUpon>SabtEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\PrintReq.resx">
+      <DependentUpon>PrintReq.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\IPPass.resx">
+      <DependentUpon>IPPass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\RepPrintReq.resx">
+      <DependentUpon>RepPrintReq.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\OldMobil.resx">
+      <DependentUpon>OldMobil.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\RepWork.resx">
+      <DependentUpon>RepWork.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\ViewResid.resx">
+      <DependentUpon>ViewResid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Work.resx">
+      <DependentUpon>Work.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\MobilMoj.resx">
+      <DependentUpon>MobilMoj.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Mobil.resx">
+      <DependentUpon>Mobil.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Mojoodi.resx">
+      <DependentUpon>Mojoodi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Ersal.resx">
+      <DependentUpon>Ersal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\InsertSerial.resx">
+      <DependentUpon>InsertSerial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank.resx">
+      <DependentUpon>Bank.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\KalaPriod.resx">
+      <DependentUpon>KalaPriod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Katrij.resx">
+      <DependentUpon>Katrij.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\LapTop.resx">
+      <DependentUpon>LapTop.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\KatrijReq.resx">
+      <DependentUpon>KatrijReq.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\OldComputer.resx">
+      <DependentUpon>OldComputer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\OldLapTop.resx">
+      <DependentUpon>OldLapTop.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\OldTerminal.resx">
+      <DependentUpon>OldTerminal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\RepComputer.resx">
+      <DependentUpon>RepComputer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\RepKatrijReq.resx">
+      <DependentUpon>RepKatrijReq.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\RepLaptop.resx">
+      <DependentUpon>RepLaptop.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\RepMobil.resx">
+      <DependentUpon>RepMobil.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\Report\RepPos.resx">
+      <DependentUpon>RepPos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\ShobMove.resx">
+      <DependentUpon>ShobMove.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bank\KalaOut.resx">
+      <DependentUpon>KalaOut.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Access.resx">
+      <DependentUpon>Access.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Area.resx">
+      <DependentUpon>Area.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Cpu.resx">
+      <DependentUpon>Cpu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\PrintSerial.resx">
+      <DependentUpon>PrintSerial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\GProblem.resx">
+      <DependentUpon>GProblem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\MergeProb.resx">
+      <DependentUpon>MergeProb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Model.resx">
+      <DependentUpon>Model.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Hdd.resx">
+      <DependentUpon>Hdd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\KeyBoard.resx">
+      <DependentUpon>KeyBoard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\LCD.resx">
+      <DependentUpon>LCD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Mark.resx">
+      <DependentUpon>Mark.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Modem.resx">
+      <DependentUpon>Modem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Monitor.resx">
+      <DependentUpon>Monitor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Mouse.resx">
+      <DependentUpon>Mouse.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\NProblem.resx">
+      <DependentUpon>NProblem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Optic.resx">
+      <DependentUpon>Optic.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Print.resx">
+      <DependentUpon>Print.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Scan.resx">
+      <DependentUpon>Scan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\Vga.resx">
+      <DependentUpon>Vga.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\City.resx">
+      <DependentUpon>City.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Gkala.resx">
+      <DependentUpon>Gkala.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\GPers.resx">
+      <DependentUpon>GPers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\INKala.resx">
+      <DependentUpon>INKala.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Ostan.resx">
+      <DependentUpon>Ostan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\PersinfoPay.resx">
+      <DependentUpon>PersinfoPay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\PersIns.resx">
+      <DependentUpon>PersIns.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\SematP.resx">
+      <DependentUpon>SematP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Skala.resx">
+      <DependentUpon>Skala.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\VahedP.resx">
+      <DependentUpon>VahedP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\VKala.resx">
+      <DependentUpon>VKala.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Alarm.resx">
+      <DependentUpon>Alarm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\CartVisit.resx">
+      <DependentUpon>CartVisit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ChgPass.resx">
+      <DependentUpon>ChgPass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Company.resx">
+      <DependentUpon>Company.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Mainfrm.resx">
+      <DependentUpon>Mainfrm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MsgbOK.resx">
+      <DependentUpon>MsgbOK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MsgbYN.resx">
+      <DependentUpon>MsgbYN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Pass.resx">
+      <DependentUpon>Pass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\PhnList.resx">
+      <DependentUpon>PhnList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Phone.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Phone.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Security.resx">
+      <DependentUpon>Security.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Story.resx">
+      <DependentUpon>Story.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\UserList.resx">
+      <DependentUpon>UserList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\RepForm.resx">
+      <DependentUpon>RepForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Bank\MainBoard.resx">
+      <DependentUpon>MainBoard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Shobeh.resx">
+      <DependentUpon>Shobeh.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Srch.resx">
+      <DependentUpon>Srch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Vaghaye.resx">
+      <DependentUpon>Vaghaye.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ITBank_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bank ico.ico" />
+    <Content Include="ObjetdockSZ.ico" />
+    <Content Include="Resources\3d1 %283%29.png" />
+    <Content Include="Resources\Aim.ico" />
+    <Content Include="Resources\Arrow-Right.png" />
+    <Content Include="Resources\budy-msn.png" />
+    <Content Include="Resources\config.ico" />
+    <Content Include="Resources\Creative Zen Micro Navy.ico" />
+    <Content Include="Resources\Edit Users.png" />
+    <Content Include="Resources\internet.png" />
+    <Content Include="Resources\IT.gif" />
+    <None Include="app.config" />
+    <None Include="Resources\ITcocacola.gif" />
+    <Content Include="Resources\ITSystem.gif" />
+    <None Include="Resources\Login.jpg" />
+    <Content Include="Resources\ObjetdockSZ.png" />
+    <Content Include="Resources\open-safety-box.ico" />
+    <Content Include="Resources\password.png" />
+    <None Include="Resources\Refresh.ico" />
+    <None Include="Resources\Secuty-agent.ico" />
+    <Content Include="Resources\TruckYellow.ico" />
+    <Content Include="Resources\Withe.jpg" />
+    <Content Include="Resources\X.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
