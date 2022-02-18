@@ -1225,7 +1225,7 @@ Public Class Computer
         Dim X As Integer
         Dim PCode As String
 
-        ' txtSoorat.Text = ""
+        txtSoorat.Text = ""
         If RB2.Checked = True Then
             For X = 0 To DataGridView1.RowCount - 1
                 If DataGridView1.Rows(X).Selected = True Then
