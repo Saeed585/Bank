@@ -1222,53 +1222,53 @@ Public Class Computer
     End Sub
 
     Private Sub btnSoorat_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSoorat.Click
-        'Dim X As Integer
-        'Dim PCode As String
+        Dim X As Integer
+        Dim PCode As String
 
-        'txtSoorat.Text = ""
-        'If RB2.Checked = True Then
-        '    For X = 0 To DataGridView1.RowCount - 1
-        '        If DataGridView1.Rows(X).Selected = True Then
-        '            txtRow.Text = DataGridView1.Rows(X).Cells(0).Value
-        '            PCode = DataGridView1.Rows(X).Cells(1).Value
+        txtSoorat.Text = ""
+        If RB2.Checked = True Then
+            For X = 0 To DataGridView1.RowCount - 1
+                If DataGridView1.Rows(X).Selected = True Then
+                    txtRow.Text = DataGridView1.Rows(X).Cells(0).Value
+                    PCode = DataGridView1.Rows(X).Cells(1).Value
 
-        '            Dim objDataAdapter As New SqlDataAdapter _
-        '                (" SELECT Soorat FROM Bnk.Computer WHERE (Row = " & txtRow.Text & ") AND (pers_code = " & PCode & ")", objConnection)
-        '            objDataset = New DataSet
-        '            objDataAdapter.Fill(objDataset, "Bnk.Computer")
-        '            objDataview = New DataView(objDataset.Tables("Bnk.Computer"))
-        '            objCurrencyManager = CType(Me.BindingContext(objDataview), CurrencyManager)
+                    Dim objDataAdapter As New SqlDataAdapter _
+                        (" SELECT Soorat FROM Bnk.Computer WHERE (Row = " & txtRow.Text & ") AND (pers_code = " & PCode & ")", objConnection)
+                    objDataset = New DataSet
+                    objDataAdapter.Fill(objDataset, "Bnk.Computer")
+                    objDataview = New DataView(objDataset.Tables("Bnk.Computer"))
+                    objCurrencyManager = CType(Me.BindingContext(objDataview), CurrencyManager)
 
-        '            txtSoorat.DataBindings.Clear()
-        '            txtSoorat.DataBindings.Add("Text", objDataview, "Soorat")
-        '            If txtSoorat.Text = "" Then
-        '                txtSoorat.Text = 0
-        '            End If
+                    txtSoorat.DataBindings.Clear()
+                    txtSoorat.DataBindings.Add("Text", objDataview, "Soorat")
+                    If txtSoorat.Text = "" Then
+                        txtSoorat.Text = 0
+                    End If
 
-        '            If txtSoorat.Text = 0 Then
-        '                objCommand.Connection = objConnection
-        '                objCommand.CommandText =
-        '                   " UPDATE Bnk.Computer SET Knd = 3, Soorat = " & txtSooratNo.Text & ", DatSoorat = N'" & maskDateSoorat.Text & "' WHERE (Row = " & txtRow.Text & ") AND (pers_code = " & PCode & ")"
-        '                objCommand.Parameters.Clear()
-        '                objCommand.CommandType = CommandType.Text
+                    If txtSoorat.Text = 0 Then
+                        objCommand.Connection = objConnection
+                        objCommand.CommandText =
+                           " UPDATE Bnk.Computer SET Knd = 3, Soorat = " & txtSooratNo.Text & ", DatSoorat = N'" & maskDateSoorat.Text & "' WHERE (Row = " & txtRow.Text & ") AND (pers_code = " & PCode & ")"
+                        objCommand.Parameters.Clear()
+                        objCommand.CommandType = CommandType.Text
 
-        '                objConnection.Open()
-        '                Try
-        '                    objCommand.ExecuteNonQuery()
-        '                Catch SqlExceptionErr As SqlException
-        '                    MessageBox.Show(SqlExceptionErr.Message)
-        '                    objConnection.Close()
-        '                    Exit Sub
-        '                End Try
-        '                objConnection.Close()
-        '            End If
-        '        End If
-        '    Next
-        'End If
-        'Panel1.Visible = False
-        'FillDataSetAndDataView()
-        'FillDataGridView()
-        'Clear()
+                        objConnection.Open()
+                        Try
+                            objCommand.ExecuteNonQuery()
+                        Catch SqlExceptionErr As SqlException
+                            MessageBox.Show(SqlExceptionErr.Message)
+                            objConnection.Close()
+                            Exit Sub
+                        End Try
+                        objConnection.Close()
+                    End If
+                End If
+            Next
+        End If
+        Panel1.Visible = False
+        FillDataSetAndDataView()
+        FillDataGridView()
+        Clear()
     End Sub
 
     Private Sub RB3_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RB3.CheckedChanged
