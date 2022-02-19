@@ -1000,6 +1000,7 @@ Partial Class Computer
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.GroupBox1.Controls.Add(Me.RB5)
         Me.GroupBox1.Controls.Add(Me.RB4)
         Me.GroupBox1.Controls.Add(Me.RB3)
@@ -1231,7 +1232,7 @@ Partial Class Computer
         'txtCompName
         '
         Me.txtCompName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtCompName.BackColor = System.Drawing.Color.White
+        Me.txtCompName.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.txtCompName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtCompName.ForeColor = System.Drawing.Color.Black
         Me.txtCompName.Location = New System.Drawing.Point(328, 71)
@@ -1256,7 +1257,7 @@ Partial Class Computer
         'txtIP
         '
         Me.txtIP.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtIP.BackColor = System.Drawing.Color.White
+        Me.txtIP.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.txtIP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtIP.ForeColor = System.Drawing.Color.Black
         Me.txtIP.Location = New System.Drawing.Point(179, 71)
