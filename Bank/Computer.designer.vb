@@ -1000,7 +1000,11 @@ Partial Class Computer
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+<<<<<<< HEAD
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.InactiveBorder
+=======
+        Me.GroupBox1.BackColor = System.Drawing.Color.RosyBrown
+>>>>>>> 38d801773068d90a0ca6b65d62d070005d5080cc
         Me.GroupBox1.Controls.Add(Me.RB5)
         Me.GroupBox1.Controls.Add(Me.RB4)
         Me.GroupBox1.Controls.Add(Me.RB3)
